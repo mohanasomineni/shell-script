@@ -11,7 +11,7 @@ fi
 dnf list installed mysql
 
 if [ $? -ne 0 ] 
-then#not installed
+then #not installed
     dnf install mysql -y
     if [ $? -ne 0 ]
     then
@@ -47,7 +47,7 @@ then
 else
     echo "Git is already ... INSTALLED"
 fi
- 
+
 
 # if [ $? -ne 0 ]
 # then
