@@ -19,5 +19,5 @@ while read -r filepath # here filepath is the variable name, you can give any na
 do
     echo "Deleting file: $filepath" &>>$LOG_FILE_NAME
     rm -rf $filepath
-    echo "Deleted file: $filepath
+    echo "Deleted file: $filepath"
 done <<< $FILES_TO_DELETE
